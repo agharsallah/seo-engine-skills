@@ -1,0 +1,5 @@
+# Requirements for SEO Engine Hidden Text Detection Script
+selenium>=4.15.0
+beautifulsoup4>=4.9.3
+lxml>=4.6.3
+webdriver-manager>=4.0.0

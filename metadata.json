@@ -1,0 +1,9 @@
+{
+  "name": "seo-engine",
+  "version": "1.0.0",
+  "organization": "independent",
+  "abstract": "Deterministic on-page SEO checks and spam policy safeguards with evidence and pass/fail outcomes.",
+  "references": [
+    "https://developers.google.com/search/docs"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "status": "success",
+  "passed": true,
+  "violations_count": 0,
+  "violations": [],
+  "stats": {
+    "total_words": 176,
+    "meaningful_words": 126,
+    "unique_words": 96,
+    "density_threshold": 0.05,
+    "top_keywords": [
+      {
+        "keyword": "hyperscale",
+        "count": 5,
+        "density": 0.0284,
+        "density_percentage": 2.84
+      },
+      {
+        "keyword": "automation",
+        "count": 4,
+        "density": 0.0227,
+        "density_percentage": 2.27
+      },
+      {
+        "keyword": "solutions",
+        "count": 4,
+        "density": 0.0227,
+        "density_percentage": 2.27
+      },
+      {
+        "keyword": "business",
+        "count": 4,
+        "density": 0.0227,
+        "density_percentage": 2.27
+      },
+      {
+        "keyword": "enterprise",
+        "count": 3,
+        "density": 0.017,
+        "density_percentage": 1.7
+      },
+      {
+        "keyword": "llm",
+        "count": 3,
+        "density": 0.017,
+        "density_percentage": 1.7
+      },
+      {
+        "keyword": "scale",
+        "count": 2,
+        "density": 0.0114,
+        "density_percentage": 1.14
+      },
+      {
+        "keyword": "grade",
+        "count": 2,
+        "density": 0.0114,
+        "density_percentage": 1.14
+      },
+      {
+        "keyword": "intelligent",
+        "count": 2,
+        "density": 0.0114,
+        "density_percentage": 1.14
+      },
+      {
+        "keyword": "transform",
+        "count": 2,
+        "density": 0.0114,
+        "density_percentage": 1.14
+      }
+    ]
+  },
+  "text_preview": "Hyperscale Services About Contact Scale AI Beyond Limits Enterprise-grade LLM automation and intelligent agent solutions. Transform your business with cutting-edge artificial intelligence that scales ...",
+  "message": "No keyword stuffing detected. Analyzed 176 words.",
+  "url": "https://www.hyperscale.top/",
+  "title": "Hyperscale - AI & LLM Automation Solutions"
+}

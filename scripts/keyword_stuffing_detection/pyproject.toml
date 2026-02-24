@@ -1,0 +1,12 @@
+[project]
+name = "keyword-stuffing-detection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "selenium>=4.15.0",
+    "beautifulsoup4>=4.9.3",
+    "lxml>=4.6.3",
+    "webdriver-manager>=4.0.0"
+]
