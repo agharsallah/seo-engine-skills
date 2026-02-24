@@ -30,14 +30,6 @@ The SEO Engine Skills
    npx skills add https://github.com/agharsallah/seo-engine-skills --skill seo-engine
    ```
 
-2. **Set up Python environment:**
-   ```bash
-   cd scripts/cloaking_detection
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-
 ### Basic Usage
 
 Skills are automatically available once installed. The agent will use them when relevant tasks are detected. For example, if the agent is asked to audit a website's SEO, it will apply the relevant rules from this skill.
