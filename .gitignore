@@ -33,3 +33,4 @@ build/
 vercel-react-best-practices
 experimenting
 prompts.txt
+.env

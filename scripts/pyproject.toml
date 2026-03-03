@@ -1,5 +1,5 @@
 [project]
-name = "hidden-text-detection"
+name = "scripts"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,5 +8,8 @@ dependencies = [
     "selenium>=4.15.0",
     "beautifulsoup4>=4.9.3",
     "lxml>=4.6.3",
-    "webdriver-manager>=4.0.0"
+    "webdriver-manager>=4.0.0",
+    "requests>=2.25.1",
+    "urllib3>=1.26.0",
+    "google-api-python-client>=2.190.0",
 ]

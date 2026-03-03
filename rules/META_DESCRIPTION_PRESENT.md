@@ -1,41 +1,56 @@
 ---
-title: Meta description tag is present and descriptive
-impact: MEDIUM
-impactDescription: Documentation suggests ensuring description meta tags are descriptive, specific, and accurate.
-tags: seo
+title: Ensure presence of a meta description tag
+impact: LOW
+impactDescription: Meta description often supplies the snippet shown in search results.
+tags: meta, snippet
 inputFields:
   - name: html
     required: true
-    description: HTML content to evaluate for meta description.
+    description: The full HTML source of the page.
 ---
 
-## META_DESCRIPTION_PRESENT
-Ensures the meta description tag is present and descriptive.
+## Ensure presence of a meta description tag
+Meta description often supplies the snippet shown in search results.
 
 ## Evidence to collect
-- Presence and content of <meta name="description"> element
-- Length of content attribute
+- Content attribute of the meta description: `meta[name='description'][content]`
 
 ## Logic (pseudocode)
-Input: html
-1. Parse html and locate <meta name="description"> element.
-2. If not found, set observed_present = false.
-3. If found, extract its content attribute, trim whitespace.
-4. Compute length of content in characters as observed_length.
+Inputs: html
+Steps:
+1. Parse html into a DOM.
+2. Locate <meta name="description"> element.
+3. If element exists and its content attribute is non‑empty, result = pass.
+4. Otherwise, result = fail.
 
 ## Pass condition
-Meta description is present and its length is at least 50 characters.
+Page contains a non‑empty meta description tag.
 
 ## Failure messages
-Meta description missing or too short (${observed_length} characters).
+Meta description tag is missing or empty.
 
 ## Examples
 ### Passing
-<meta name="description" content="This is a descriptive summary of the page that is specific and accurate.">
+Page with meta description.
+```html
+<head><meta name="description" content="Learn how to bake a chocolate cake in 5 easy steps."></head>
+```
 
 ### Failing
-<meta name="description" content="Short.">
-<!-- No meta description present -->
+Missing meta description.
+```html
+<head></head>
+```
+
+### test case passing
+```html
+<html><head><meta name="description" content="A short summary."></head><body></body></html>
+```
+
+### test case failing
+```html
+<html><head></head><body></body></html>
+```
 
 ### References
-Google Search documentation — https://developers.google.com/search/docs/appearance/meta-description
+Reference: [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
